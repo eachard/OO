@@ -1,5 +1,6 @@
 class Playboy
-  
+  attr_reader :nationality, :name, :conquests
+  attr_accessor :status
   def initialize(name, nationality)
     @conquests = []
     @name, @nationality = name, nationality   
@@ -19,6 +20,7 @@ end
 
 # 1. Set nationality getter or setter 
 casanova = Playboy.new("Giacomo Casanova", "Italian")
+puts casanova.name
 puts casanova.nationality
 
 # 2. Set conquests getter or setter 
